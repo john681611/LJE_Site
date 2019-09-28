@@ -29,7 +29,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: Consolas,monaco,monospace; 
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 36px;
+  font-size: 18px;
   margin: 0;
   padding: 6px 0;
   line-height: 1;
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  text-transform: uppercase;
+  text-transform: none;
   color: #fff;
 }
 
@@ -220,6 +220,15 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started:hover {
   background: #2dc997;
   border: 2px solid #2dc997;
+}
+
+.logo-function {
+  color: #d7ba7d;
+  
+}
+
+.logo-string {
+  color: #CE9178;
 }
 
 /*--------------------------------------------------------------
@@ -818,7 +827,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  height: 400px;
 }
 
 #team .member .pic img {
@@ -979,4 +988,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.blinking-cursor {
+  animation: 1.5s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #FFF;
+  }
 }
