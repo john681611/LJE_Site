@@ -8,8 +8,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
-  color: #666666;
+  background: #111;
+  color: #EEE;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: #000 url("../img/preloader.svg") no-repeat center center;
 }
 
 /* Back to top button */
@@ -505,22 +505,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: #fff;
   padding: 80px 0;
 }
 
 #about .about-container .background {
   min-height: 300px;
   background: url(../img/about-img.jpg) center top no-repeat;
+      background-size: contain;
   margin-bottom: 10px;
 }
 
-#about .about-container .content {
-  background: #fff;
-}
 
 #about .about-container .title {
-  color: #333;
+  color: #CCC;
   font-weight: 700;
   font-size: 32px;
 }
@@ -540,14 +537,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box {
-  background: #fff;
   background-size: cover;
   padding: 0 0 30px 0;
 }
 
 #about .about-container .icon-box .icon {
   float: left;
-  background: #fff;
   width: 64px;
   height: 64px;
   display: flex;
@@ -605,7 +600,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -618,6 +612,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 200px;
   position: relative;
   background: #fafafa;
+  color: #111
 }
 
 #services .icon {
@@ -647,7 +642,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box:hover .icon {
-  background: #fff;
+  background: #111;
   border: 2px solid #2dc997;
 }
 
@@ -724,7 +719,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  background: #f7f7f7;
   padding: 80px 0;
 }
 
@@ -815,7 +809,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
   padding: 80px 0 60px 0;
 }
 
@@ -866,7 +859,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
   padding: 80px 0 40px 0;
 }
 
