@@ -489,7 +489,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .section-header .section-title {
   font-size: 32px;
-  color: #111;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -971,7 +970,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
-#footer .copyright {
+#footer .copyright, .center-text {
   text-align: center;
 }
 
