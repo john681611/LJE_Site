@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/hero-bg-min.jpg) top center;
   background-size: cover;
   position: relative;
 }
@@ -262,6 +262,18 @@ h1,h2,h3,h4,h5,h6 {
   min-width: 180px;
 }
 
+.menu-switch {
+  display: none;
+  font-size: 40px;
+  float: right;
+  position: relative;
+  top: -10px;
+}
+
+#mobile-menu {
+  display: none;
+}
+
 /* Nav Menu Arrows */
 
 /* Nav Meu Container */
@@ -269,11 +281,26 @@ h1,h2,h3,h4,h5,h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
+  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #nav-menu-container {
-    display: none;
+    transform: scaleY(0); 
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+    background-image: linear-gradient(rgb(0,0,0,.2), #000);
+  }
+  .menu-switch {
+    display: block;
+  }
+
+  input:checked + .menu-switch  {
+    color: #999
+  }
+
+  input:checked + .menu-switch  + #nav-menu-container {
+    transform: scaleY(1);
   }
 }
 
@@ -347,12 +374,16 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-/* Mobile Nav Toggle */
+@media (max-width: 1024px) {
+  .nav-menu > li {
+    float: none;
+    margin-top: 20px;
+  }
 
-/* Mobile Nav Styling */
-
-/* Mobile Nav body classes */
-
+  .nav-menu  a {
+    font-size: 30px;
+  }
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -383,7 +414,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  background: url(../img/about-img-min.jpg) center top no-repeat;
   background-size: contain;
   margin-bottom: 10px;
 }
