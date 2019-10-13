@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: #111;
@@ -35,40 +38,6 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
-}
-
-/* Prelaoder */
-
-/* Back to top button */
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  padding: 6px 12px 9px 12px;
-  font-size: 16px;
-  border-radius: 2px;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-}
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-}
-
-.back-to-top:focus {
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-  outline: none;
-}
-
-.back-to-top:hover {
-  background: #2dc997;
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -305,8 +274,11 @@ h1,h2,h3,h4,h5,h6 {
   #nav-menu-container {
     transform: scaleY(0); 
     transition: all 0.25s ease-in-out;
+    transform-origin: top;
     width: 100%;
     background-image: linear-gradient(rgb(0,0,0,.2), #000);
+    position: relative;
+    bottom: 20px;
   }
   .menu-switch {
     display: block;
@@ -488,7 +460,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #about .about-container .icon-box .title a {
-  color: #111;
+  color: #CCC;
 }
 
 #about .about-container .icon-box .description {
@@ -621,14 +593,14 @@ h1,h2,h3,h4,h5,h6 {
 #portfolio .portfolio-item .details h4 {
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   padding: 8px 0 2px 8px;
   margin: 0;
 }
 
 #portfolio .portfolio-item .details span {
   display: block;
-  color: #fff;
+  color: #000;
   font-size: 13px;
   padding-left: 8px;
 }
@@ -639,6 +611,16 @@ h1,h2,h3,h4,h5,h6 {
 
 #portfolio .portfolio-item:hover img {
   top: -30px;
+}
+
+@media (max-width: 768px) {
+  #portfolio .portfolio-item .details {
+    bottom: 0;
+  }
+  
+  #portfolio .portfolio-item img {
+    top: -30px;
+  }
 }
 
 /* Team Section
