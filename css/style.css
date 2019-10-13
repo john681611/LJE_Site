@@ -121,6 +121,16 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+@media (max-width: 576px) {
+  #header #logo h1 {
+    font-size: 10px;
+  }
+
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -174,6 +184,13 @@ h1,h2,h3,h4,h5,h6 {
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width:  576px) {
+  #hero h1 {
+    font-size: 18px;
     line-height: 36px;
   }
 }
