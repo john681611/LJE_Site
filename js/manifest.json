@@ -2,8 +2,19 @@
     "short_name": "LJE('Ltd');",
     "name": "LittleJohnEngineering('Ltd');",
     "display":"fullscreen",
-    "theme_color": "#000000",
-    "background_color":"#000000",
-    "icons": [],
+    "theme_color": "#111",
+    "background_color":"#111",
+    "icons": [
+      {
+        "src": "/img/icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img/icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
     "start_url": "/"
   }
