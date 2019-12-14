@@ -379,6 +379,9 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Sections Header
 --------------------------------*/
+.section-header {
+  margin-top: 20px;
+}
 
 .section-header .section-title {
   font-size: 32px;
@@ -403,9 +406,12 @@ h1,h2,h3,h4,h5,h6 {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img-min.jpg) center top no-repeat;
-  background-size: contain;
   margin-bottom: 10px;
+}
+
+#about .about-container .background img {
+  width: 100%;
+  height: auto;
 }
 
 #about .about-container .title {
