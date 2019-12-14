@@ -1,0 +1,1 @@
+const lazyLoadInstance = new LazyLoad();
